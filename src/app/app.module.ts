@@ -26,7 +26,7 @@ import {AppRoutingModule} from "./app-routing.module";
     AppRoutingModule
   ],
   providers: [
-    HeroService,
+    HeroService,    //앵귤러 책 108page 참고
     { provide: LocationStrategy,
       useClass: HashLocationStrategy
     }

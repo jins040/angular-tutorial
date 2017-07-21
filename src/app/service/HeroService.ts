@@ -24,13 +24,13 @@ export class HeroService {
     //return this.heroes;
 
     //GET 방식으로 가져오기
-    return this.http.get("http://localhost:8080/heroes");   //기본적으로 JSON으로 가져오는 것을 간주하기 때문에
+    return this.http.get("http://localhost:8080/hero");   //기본적으로 JSON으로 가져오는 것을 간주하기 때문에
                                                             //리턴 타입을 Observable로 wrapping하여 넘긴다
                                                             //JSON 맵핑은 자동, subscribe 하는 순간에 data를 실제로 가져온다.
   }
 
   getHero(id: number): Observable<Hero> {
-    return this.http.get("http://localhost:8080/heroes/" + id);
+    return this.http.get("http://localhost:8080/hero/" + id);
   }
 
   // 2. 영웅 등록하기
